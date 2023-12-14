@@ -57,6 +57,29 @@
             margin-right: 10vw; /* 10% of the viewport width */
             padding: 20px; /* 为内容添加一些内边距 */
         }
+                /* 设置空两行的样式 */
+        .space {
+            height: 40px; /* 调整空白的高度 */
+            width: 100%; /* 宽度占据整个行 */
+        }
+
+                /* 设置第一行的容器样式 */
+        .first-row {
+            display: flex;
+            width: 100%;
+        }
+
+        /* 设置图片样式 */
+        .image-container {
+            flex: 1; /* 占据左半边 */
+        }
+
+        /* 设置文字样式 */
+        .text-container {
+            flex: 1; /* 占据右半边 */
+            padding: 20px;
+        }
+        
     </style>
 </head>
 <body>
@@ -87,6 +110,54 @@
       Hello, my name is Yang Xiaodong, a graduate student at Peking University. I am currently pursuing my second master's degree in game development. I intend to focus on captivating digital environments and creating a more exciting and boundless world.
     </p>
   </div>
+</div>
+
+  
+<!-- 空两行 -->
+<div class="space"></div>
+
+
+<div class="custom-section">
+  <!-- Projects Section -->
+  <h2 class="title is-3">Projects</h2>
+  <!-- 'title is-3' class sets the heading size to h3 -->
+
+
+  <section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <!-- Project One -->
+      <h2 class="title is-3">About Me</h2>
+
+          <!-- 第一行 -->
+    <div class="first-row">
+        <!-- 图片容器 -->
+        <div class="image-container">
+            <img src="static/images/carousel4.jpg" alt="Your Image">
+        </div>
+        <!-- 文字容器 -->
+        <div class="text-container">
+            <p>Your text goes here. This is the content on the right side.</p>
+        </div>
+    </div>
+
+    <!-- 空两行 -->
+    <div class="space"></div>
+
+    <!-- 第二行 -->
+          <div class="publication-video">
+            <!-- Youtube embed code here -->
+            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+      
+
+      
+    </div>
+  </div>
+</section>
+  
+
+
 </div>
 
 
