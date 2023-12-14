@@ -43,6 +43,20 @@
   <script src="static/js/bulma-carousel.min.js"></script>
   <script src="static/js/bulma-slider.min.js"></script>
   <script src="static/js/index.js"></script>
+
+      <style>
+        /* 设置全局页面边距 */
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* 设置某个 section 的左边距为页面宽度的 1/10 */
+        .custom-section {
+            margin-left: 10vw; /* 10% of the viewport width */
+            padding: 20px; /* 为内容添加一些内边距 */
+        }
+    </style>
 </head>
 <body>
 
@@ -61,24 +75,15 @@
 </section>
 
 
-<!-- Navigation Links to Subpages -->
-<ul>
-  <li><a href="page1.html">Page 1</a></li>
-<!--   <li><a href="page2.html">Page 2</a></li>
-  <li><a href="page3.html">Page 3</a></li> -->
-</ul>
-
-<div class="column is-four-fifths">
+<div class="custom-section">
   <!-- Self-Introduction Section -->
-  <h2 class="title is-3">Self Introduction</h2>
+  <h2 class="title is-3">About Me</h2>
   <!-- 'title is-3' class sets the heading size to h3 -->
 
   <div class="content">
     <!-- 'content' class styles the text content -->
     <p>
-      Hello, I'm [Your Name]. I am passionate about [your interests or field]. 
-      I have [mention any relevant experience or achievements]. 
-      Currently, I am [describe your current situation or what you are studying/working on].
+      Hello, my name is Yang Xiaodong, a graduate student at Peking University. I am currently pursuing my second master's degree in game development. I intend to focus on captivating digital environments and creating a more exciting and boundless world.
     </p>
   </div>
 </div>
